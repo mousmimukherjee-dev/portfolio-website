@@ -6,18 +6,21 @@ const defaultProjects = [
   {
     title: "BMI-Calculator",
     image: "./image/BMI-Calculator.png",
+    alt: "Screenshot of BMI Calculator project",
     link: "https://github.com/mousmimukherjee-dev/BMI-Calculator",
   },
 
   {
     title: "Tic Tac Toe",
     image: "./image/TicTacToe.png",
+    alt: "Screenshot of Tic Tac Toe game project",
     link: "https://github.com/mousmimukherjee-dev/Tic-tac-toe-game",
   },
 
   {
     title: "Tiny Roll",
     image: "./image/TinyRoll.png",
+    alt: "Screenshot of Tiny Roll game project",
     link: "https://github.com/mousmimukherjee-dev/Responsive-Web-Game",
   },
 ];
@@ -29,7 +32,7 @@ const createWorkCard = (title, image, link) => {
   work.innerHTML = `
   <img src=${image} alt=${title}>
   <div class="work_content">
-  <h3>${title}</h3>
+  <h2>${title}</h2>
   <a href="${link}" target="_blank" aria-label="View project on GitHub" >View Project</a> 
   `;
 
@@ -39,7 +42,7 @@ const createWorkCard = (title, image, link) => {
 const showDefaultProjects = () => {
   workList.innerHTML = "";
   defaultProjects.forEach((project) => {
-    createWorkCard(project.title, project.image, project.link);
+    createWorkCard(project.title, project.image,project.alt, project.link);
   });
 };
 
@@ -96,6 +99,7 @@ closeMenu.addEventListener("click", () => {
 
 const cursor = document.createElement("img");
 cursor.src = "./image/star.png";
+cursor.alt = "Star trail";  
 cursor.className = "trail-effect";
 document.body.appendChild(cursor);
 

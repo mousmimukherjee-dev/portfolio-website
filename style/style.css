@@ -11,9 +11,14 @@ html {
 
 body {
   background-color: #1f242d;
-  color: #fff;
+  color:  #ffffff;
 }
 
+
+a{
+ color: #ff004f;
+
+}
 #header {
   width: 100%;
   height: 100vh;
@@ -133,10 +138,6 @@ nav ul li a:hover::after {
   color: #ff004f;
 }
 
-/* ----about---- */
-
-/* ---portfolio---- */
-
 .btn {
   display: block;
   margin: 50px auto;
@@ -154,8 +155,6 @@ nav ul li a:hover::after {
   background: #ff004f;
 }
 
-/* ----contact--- */
-
 .copyright {
   text-align: center;
   padding: 25px 0;
@@ -171,6 +170,8 @@ nav ul li a:hover::after {
 nav .fa-solid {
   display: none;
 }
+
+
 
 #msg {
   color: #61b752;

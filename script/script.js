@@ -34,7 +34,8 @@ $('#line1').fadeIn(800,function(){
 })
 
 const cursor=document.createElement('img');
-cursor.src="./image/star.png"
+cursor.src="./image/star.png" 
+cursor.alt = "Star trail";  
 cursor.className='trail-effect';
 document.body.appendChild(cursor);
 
