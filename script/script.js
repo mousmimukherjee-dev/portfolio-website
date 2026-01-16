@@ -72,7 +72,7 @@ closeMenu.addEventListener("click", () => {
 });
 
 var typed = new Typed("#element", {
-  strings: ["Web Developer", "Problem Solver", "JavaScript Developer"],
+  strings: ["Frontend Developer","Backend Developer","Web Developer", "Problem Solver", "JavaScript Developer"],
   typeSpeed: 60,
   backSpeed:30,
   loop:true,
