@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="icon" href="./image/favicon (2).png">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./script/contact.js" defer></script>
+    
+    <title>Developer Portfolio | Mousumi Mukherjee</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> 
+  </head>
+
+  <body class="contact_page">
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo"><span>M</span>ousumi<span>.</span></h1>
+          <button class="hamburger_menu" aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <ul id="side_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="./mywork.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <button id="close_menu"aria-label="Close menu">
+              <i class="fa-solid fa-xmark"  ></i>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section id="contact">
+      <div class="container">
+          <div class="contact_left">
+            <h1 class="sub_title">Contact Me!</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>mousmichatterjee6@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i></i>0761569991</p>
+            <div class="social_icons">
+              <a href="https://www.linkedin.com/notifications/?filter=all"  aria-label="Visit my LinkedIn profile" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/" aria-label="Visit my GitHub profile" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/" aria-label="Visit my Instagram profile" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a> 
+            </div>
+            <a href="./image/my cv.docx" download class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact_right">
+            <form name="submit-to-google-sheet" id="form">
+              <label for="name" class="visually-hidden">Your Name</label>
+              <input type="text" id="name" name="Name" placeholder="Your Name" autocomplete="off"  required />
+              <label for="email" class="visually-hidden">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your Email"
+                autocomplete="off" 
+                required
+              />
+              <label for="msg" class="visually-hidden">Your message</label>
+              <textarea
+                id="msg"
+                name="Message"
+                autocomplete="off" 
+                rows="6"
+                placeholder="Your message" 
+              ></textarea>
+              <button type="submit" class="btn btn2" id="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>   
+      </section>
+    </main>
+
+
+  <footer class="copyright">
+        <p>© 2026 Mousumi | Designed and Developed with
+        <i class="fa-solid fa-heart"></i> </p>
+  </footer>
+
+  </body>
+  </html>

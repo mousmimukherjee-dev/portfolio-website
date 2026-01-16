@@ -1,0 +1,114 @@
+.contact_page #header {
+  height: auto;
+  background: none;
+}
+
+.contact_page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_page main {
+  flex: 1;
+}
+
+#contact .container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact_left {
+  flex-basis: 35%;
+}
+
+.contact_right {
+  flex-basis: 60%;
+}
+
+.contact_left p {
+  margin-top: 30px;
+}
+
+.contact_left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social_icons {
+  margin-top: 30px;
+}
+
+.social_icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.4s;
+}
+
+.social_icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+  color: #1f242d;
+  font-weight: 900;
+}
+
+.contact_right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  display: block;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+#msg {
+  min-height: 150px;
+  margin: 15px 0;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@media screen and (max-width: 768px) {
+  #contact .container {
+    flex-direction: column;
+  }
+}
