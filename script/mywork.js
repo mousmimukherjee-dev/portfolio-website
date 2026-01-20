@@ -42,7 +42,7 @@ const createWorkCard = (title, image, link) => {
 const showDefaultProjects = () => {
   workList.innerHTML = "";
   defaultProjects.forEach((project) => {
-    createWorkCard(project.title, project.image, project.alt, project.link);
+    createWorkCard(project.title, project.image, project.link);
   });
 };
 
