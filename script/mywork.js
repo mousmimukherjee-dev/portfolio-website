@@ -42,7 +42,7 @@ const createWorkCard = (title, image, link) => {
 const showDefaultProjects = () => {
   workList.innerHTML = "";
   defaultProjects.forEach((project) => {
-    createWorkCard(project.title, project.image,project.alt, project.link);
+    createWorkCard(project.title, project.image, project.alt, project.link);
   });
 };
 
@@ -54,7 +54,7 @@ const getWorkData = async () => {
   workList.innerHTML = "";
   try {
     let response = await fetch(
-      "https://api.github.com/users/mousmimukherjee-dev/repos"
+      "https://api.github.com/users/mousmimukherjee-dev/repos",
     );
 
     if (!response.ok) {
@@ -99,7 +99,7 @@ closeMenu.addEventListener("click", () => {
 
 const cursor = document.createElement("img");
 cursor.src = "./image/star.png";
-cursor.alt = "Star trail";  
+cursor.alt = "Star trail";
 cursor.className = "trail-effect";
 document.body.appendChild(cursor);
 
